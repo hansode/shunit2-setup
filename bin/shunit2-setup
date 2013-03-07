@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# description:
+#
+# requires:
+#  bash
+#
+
+function shunit2_deploy() {
+  rsync -av ${BASH_SOURCE[0]%/*}/../templates/test .
+}
+
+function shunit2_cli() {
+  shunit2_deploy
+}
+
+# CLI
+if [[ "${BASH_SOURCE[0]##*/}" == "shunit2-setup" ]]; then
+  shunit2_cli $*
+fi
