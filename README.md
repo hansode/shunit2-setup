@@ -1,6 +1,8 @@
 shunit2-setup
 =============
 
+[![Build Status](https://travis-ci.org/hansode/shunit2-setup.png)](https://travis-ci.org/hansode/shunit2-setup)
+
 `shunit2-setup` is the [shunit2](https://code.google.com/p/shunit2/) setup script
 
 Getting Started
