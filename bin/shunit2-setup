@@ -4,6 +4,7 @@
 #
 # requires:
 #  bash
+#  rsync
 #
 
 function shunit2_deploy() {
