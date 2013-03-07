@@ -1,0 +1,5 @@
+# Travis CI does not support bash. :'(
+language: c
+install: make
+before_install: make rsync
+script: make test
