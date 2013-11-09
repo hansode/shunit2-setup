@@ -1,6 +1,8 @@
-all: skel
+TARGETS=skel
+
+all: $(TARGETS)
 
 skel:
 	(cd $@ && make)
 
-.PHONY: skel
+.PHONY: $(TARGETS)
