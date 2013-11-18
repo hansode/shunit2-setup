@@ -17,5 +17,5 @@ function shunit2_cli() {
 
 # CLI
 if [[ "${BASH_SOURCE[0]##*/}" == "shunit2-setup" ]]; then
-  shunit2_cli $*
+  shunit2_cli "$@"
 fi
