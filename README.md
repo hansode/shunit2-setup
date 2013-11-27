@@ -5,6 +5,12 @@ shunit2-setup
 
 [shunit2](https://code.google.com/p/shunit2/) based testing framework setup script
 
+Requirements
+------------
+
++ [bash](http://www.gnu.org/software/bash/)
++ [make](http://www.gnu.org/software/make/)
+
 Installation
 ------------
 
@@ -45,5 +51,34 @@ Run tests.
 
 ```
 $ cd test
-$ make test
+$ make
+
+(cd unit && make)
+make[1]: Entering directory `/path/to/project-shunit2/test/unit'
+(cd skel && make)
+make[2]: Entering directory `/path/to/project-shunit2/test/unit/skel'
+for i in ./t.*; do echo $i; $i || exit; done
+./t.skel.sh
+test_skel_ok
+test_skel_ng
+
+Ran 2 tests.
+
+OK
+make[2]: Leaving directory `/path/to/project-shunit2/test/unit/skel'
+make[1]: Leaving directory `/path/to/project-shunit2/test/unit'
+(cd component && make)
+make[1]: Entering directory `/path/to/project-shunit2/test/component'
+(cd skel && make)
+make[2]: Entering directory `/path/to/project-shunit2/test/component/skel'
+for i in ./t.*; do echo $i; $i || exit; done
+./t.skel.sh
+test_skel_ok
+test_skel_ng
+
+Ran 2 tests.
+
+OK
+make[2]: Leaving directory `/path/to/project-shunit2/test/component/skel'
+make[1]: Leaving directory `/path/to/project-shunit2/test/component'
 ```
