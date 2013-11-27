@@ -22,12 +22,12 @@ function tearDown() {
 
 function test_skel_ok() {
   :
-  assertEquals $? 0
+  assertEquals ${?} 0
 }
 
 function test_skel_ng() {
   ! :
-  assertNotEquals $? 0
+  assertNotEquals ${?} 0
 }
 
 ## shunit2
