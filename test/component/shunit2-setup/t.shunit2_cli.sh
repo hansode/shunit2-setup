@@ -22,7 +22,7 @@ function tearDown() {
 
 function test_shunit2_cli() {
   shunit2_cli
-  assertEquals 0 $?
+  assertEquals 0 ${?}
 }
 
 ## shunit2

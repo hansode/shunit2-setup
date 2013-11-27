@@ -13,7 +13,7 @@
 ## functions
 
 function setUp() {
-  function rsync() { echo rsync $*; }
+  function rsync() { echo rsync "${@}"; }
 }
 
 function tearDown() {
@@ -22,7 +22,7 @@ function tearDown() {
 
 function test_shunit2_deploy() {
   shunit2_deploy >/dev/null
-  assertEquals 0 $?
+  assertEquals 0 ${?}
 }
 
 ## shunit2

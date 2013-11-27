@@ -22,7 +22,7 @@ function tearDown() {
 
 function test_shunit2_deploy() {
   shunit2_deploy
-  assertEquals 0 $?
+  assertEquals 0 ${?}
 }
 
 ## shunit2

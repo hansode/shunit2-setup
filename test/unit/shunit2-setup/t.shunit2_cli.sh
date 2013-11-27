@@ -13,7 +13,7 @@
 ## functions
 
 function setUp() {
-  function shunit2_deploy() { echo shunit2_deploy $*; }
+  function shunit2_deploy() { echo shunit2_deploy "${@}"; }
 }
 
 function tearDown() {
@@ -22,7 +22,7 @@ function tearDown() {
 
 function test_shunit2_cli() {
   shunit2_cli
-  assertEquals 0 $?
+  assertEquals 0 ${?}
 }
 
 ## shunit2
