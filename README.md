@@ -5,6 +5,12 @@ shunit2-setup
 
 [shunit2](https://code.google.com/p/shunit2/) based testing framework setup script
 
+Requirements
+------------
+
++ [bash](http://www.gnu.org/software/bash/)
++ [make](http://www.gnu.org/software/make/)
+
 Installation
 ------------
 
