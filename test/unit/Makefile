@@ -1,6 +1,8 @@
-all: shunit2-setup
+TARGETS=shunit2-setup
+
+all: $(TARGETS)
 
 shunit2-setup:
 	(cd $@ && make)
 
-.PHONY: shunit2-setup
+.PHONY: $(TARGETS)
